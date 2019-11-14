@@ -20,7 +20,10 @@
     "concurrently": "^4.1.0",
     "nodemon": "^1.18.7"
   },
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.10"
+  },
   "keywords": [],
   "repository": {
     "type": "git",
