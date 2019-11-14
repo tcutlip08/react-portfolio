@@ -3,25 +3,18 @@ const db = require("../models");
 module.exports = {
   findAll: function(req, res) {
     db.User.find(req.query)
-      .populate("history")
       .then(dbModel => {
-        //loop through history
-        //make a query for each game
-        // add it to the object
-        //return the completed object
         res.json(dbModel);
       })
       .catch(err => res.status(422).json(err));
   },
   findById: function(req, res) {
     db.User.findById(req.params.id)
-      .populate("history")
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
   findByEmail: function(req, res) {
     db.User.findOne({ email: req.params.email })
-      .populate("history")
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
