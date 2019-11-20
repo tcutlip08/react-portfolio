@@ -10,8 +10,9 @@ class Home extends Component {
   render() {
     return (
       <>
+        <div className="body"></div>
         <div className="NavBar">
-          <NavBar />
+          <NavBar state={this.state.someShit} />
         </div>
       </>
     );
