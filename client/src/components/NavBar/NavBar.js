@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavBar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = props => {
   return (
@@ -8,24 +9,24 @@ const NavBar = props => {
       <hr />
       <div id="navs">
         <div>
-          <a href="#" id="home">
-            Home
-          </a>
+          <Link className="nav" to="/">
+            <b>Home</b>
+          </Link>
         </div>
         <div>
-          <a href="#" id="bio">
-            Biography
-          </a>
+          <Link className="nav" to="/bio">
+            <b>Biography</b>
+          </Link>
         </div>
         <div>
-          <a href="#" id="myWork">
-            All My Work
-          </a>
+          <Link className="nav" to="/myWork">
+            <b>My Work</b>
+          </Link>
         </div>
         <div>
-          <a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">
-            Resume
-          </a>
+          <Link className="nav" to="/resume">
+            <b>Resume</b>
+          </Link>
         </div>
       </div>
     </div>

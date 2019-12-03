@@ -1,0 +1,12 @@
+.body {
+    /* overflow: auto; */
+}
+
+.NavBar {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
